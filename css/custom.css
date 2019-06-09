@@ -1,0 +1,141 @@
+#Top_bar{
+  background-color: white;
+}
+
+/* ++++++++++++++++++++++++++++++++++Start Style the Image Used to Trigger the Modal++++++++++++++++++++++++++++++++++++++++++++ */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white !important;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+left: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+/* ++++++++++++++++++++++++++++++++++End Style the Image Used to Trigger the Modal++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/*=============fixing footer  about us===================*/
+
+
+.fixFooter{
+color: #000 !important;
+font-weight: 400 !important;
+letter-spacing: 1px !important;
+font-size: 18px !important;
+line-height: 22px !important;
+font-family: Playfair Display, Arial, Tahoma, sans-serif !important;
+margin-bottom: 15px !important;
+margin: 0 !important;
+padding: 0 !important;
+border: 0 !important;
+font-size: 100% !important;
+font: inherit !important;
+vertical-align: baseline !important;
+display: block !important;
+margin-block-start: 1.33em !important;
+margin-block-end: 1.33em !important;
+margin-inline-start: 0px !important;
+margin-inline-end: 0px !important;
+font-weight: bold !important;
+text-align: center !important;
+}
